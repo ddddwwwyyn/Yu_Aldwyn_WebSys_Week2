@@ -1,142 +1,166 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Personal Website</title>
+<head>
+    <title>My Personal Website</title>
 
-        <style>
+    <style>
+        body{
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(to right, #ffd6e8, #fff6b3);
+            margin: 0;
+        }
 
-            body{
-                font-family: Arial, sans-serif;
-                background: linear-gradient(to right,#ffd6e8, #fff6b3);
-                margin: 0;
-            }
+        header{
+            background-color: #ffb6d9;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
 
-            header{
-                background-color: #ffb6d9;
-                text-align: center;
-                padding: 25px;
-                color: #333;
-            }
+        nav{
+            background-color: #fff0a6;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-            nav{
-                background-color: #fff0a6;
-                padding: 12px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
-            nav ul{
-                list-style: none;
-                text-align: center;
-                padding: 0;
-                margin: 0;
-            }
+        nav ul{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
 
-            nav ul li{
-                display: inline-block;
-                margin: 10px;
-            }
-            nav a{
-                text-decoration: none;
-                font-weight: bold;
-                color: #444;
-                background-color: #ffffff;
-                padding: 8px 15px;
-                border-radius: 20px;
-                transition: 0.3s;
-            }
-            nav a:hover{
-                background-color: white;
-                margin: 30px auto;
-                padding: 25px;
-                width: 80%;
-                border-radius: 15px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-            section{
-                background-color: white;
-                margin: 30px auto;
-                padding: 25px;
-                width: 80%;
-                border-radius: 15px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-            footer{
-                background-color: #ffb6d9;
-                text-align: center;
-                padding: 10px;
-            }
-        </style>
-    </head>
+        nav ul li{
+            display: inline-block;
+            margin: 5px 8px;
+        }
 
-    <body>
-        <header>
-            <h1>Aldwyn Yu</h1>
-            <p> Bachelor of Science in Information Technology</p>
-        </header>
+        nav a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #444;
+            background-color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 15px;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
 
-        <nav>
-            <ul>
-                <li><a href="#about"> About Me</a></li>
-                <li><a href="#hobbies"> Hobbies</a></li>
-                <li><a href="#contact"> Contact</a></li>
-                <li><a href="#website">website</a><li>
-            </ul>
-        </nav>
+        nav a:hover{
+            background-color: #ffb6d9;
+            color: white;
+        }
 
-        <hr>
+        section{
+            background-color: white;
+            margin: 25px auto;
+            padding: 20px;
+            max-width: 700px;  /* limits width on large screens */
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
 
-        <section id="äbout">
-            <h2>About Me</h2>
+        h2{
+            color: #ff8fb1;
+            border-bottom: 2px solid #fff0a6;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
 
-            <img src="AldwynYu.jpg" alt="My Photo" width="300">
+        /* Round profile image */
+        img{
+            display: block;
+            margin: 15px auto;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #ffb6d9;
+            object-fit: cover;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s;  /* optional hover effect */
+        }
 
-            <p>
-                Hi! My name is Aldwyn Christiel C. Yu, or Dwyn for short. I am
-                a student in National University, currently a BSIT-MWA student, INF 249.
-                I enjoy learning about computers, programming, and how websites are built.
-                Creating websites using HTML is interesting for me because it allows me to design
-                and share information on the internet.
-            </p>
-        </section>
+        img:hover{
+            transform: scale(1.05); /* slight zoom on hover */
+        }
 
-        <hr>
-        <section id="hobbies">
-            <h2>My Hobbies</h2>
+        footer{
+            background-color: #ffb6d9;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
 
-            <ul>
-                <li>Playing PC games like Valorant and TFT</li>
-                <li>Cooking</li>
-                <li>Drawing</li>
-                <li>Playing mobile games like ML and Clash of Clans</li>
-                <li>Basketball</li>
-            </ul>
-        </section>
+        /* Adjust lists spacing */
+        ul, ol{
+            padding-left: 20px;
+        }
 
-        <ht>
-            
-            <section id="Contact">
-                <h2>Contact</h2>
+        p{
+            line-height: 1.5;
+        }
 
-                <p>Email: accy700@gmail.com</p>
-                <p>Facebook: Aldwyn Christiel Castro Yu</p>
-            </section>
+    </style>
+</head>
 
-            <hr>
+<body>
 
-            <section id="websites">
-                <h2>Favourite Websites</h2>
+    <header>
+        <h1>Aldwyn Yu</h1>
+        <p>Bachelor of Science in Information Technology</p>
+    </header>
 
-                <ol>
-                    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                </ol>
-            </section>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#websites">Favorite Websites</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <footer>
-                <p>© 2026 Aldwyn Yu | Web Systems Laboratory</p>
-            </footer>
-        </ht>
-    </body>
-</html>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="AldwynYu.jpg" alt="My Photo">
+        <p>
+            Hi! My name is Aldwyn Christiel C. Yu, or Dwyn for short. I am
+            a student at National University, currently a BSIT-MWA student (INF 249).
+            I enjoy learning about computers, programming, and how websites are built.
+            Creating websites using HTML is interesting for me because it allows me to design
+            and share information on the internet.
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Playing PC games like Valorant and TFT</li>
+            <li>Cooking</li>
+            <li>Drawing</li>
+            <li>Playing mobile games like ML and Clash of Clans</li>
+            <li>Playing basketball</li>
+        </ul>
+    </section>
+
+    <section id="websites">
+        <h2>Favorite Websites</h2>
+        <ol>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: accy700@gmail.com</p>
+        <p>Facebook: Aldwyn Christiel Castro Yu</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Aldwyn Yu | Web Systems Laboratory</p>
+    </footer>
 
 </body>
 </html>
